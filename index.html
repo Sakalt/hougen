@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>日本語風架空方言生成ツール</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>日本語風架空方言生成ツール</h1>
+    <textarea id="inputWords" placeholder="単語をコンマ区切りで入力"></textarea>
+    <select id="similarity">
+        <option value="close">近い</option>
+        <option value="somewhatClose">やや近い</option>
+        <option value="bitFar">ちょっと遠い</option>
+        <option value="far">遠い</option>
+        <option value="difficult">理解するのが難しい</option>
+        <option value="differentLanguage">別言語</option>
+    </select>
+    <button onclick="generate()">生成</button>
+    <pre id="output"></pre>
+    <script src="script.js"></script>
+</body>
+</html>
